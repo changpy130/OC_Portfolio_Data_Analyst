@@ -1,7 +1,4 @@
-# Portfolio – Data Analyst 
->🇫🇷 [Lire la version française](README_FR.md)
-
-Welcome to my Data Analyst portfolio for the OpenClassrooms program.
+# 🎮 Portfolio – Data Analyst 
 
 [![SQL](https://img.shields.io/badge/SQL-025E8C?style=for-the-badge&logo=sqlite&logoColor=white)](https://en.wikipedia.org/wiki/SQL)
 [![Python](https://img.shields.io/badge/Python-3.11+-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org)
@@ -9,6 +6,16 @@ Welcome to my Data Analyst portfolio for the OpenClassrooms program.
 [![Streamlit](https://img.shields.io/badge/Streamlit-FF4B4B?style=for-the-badge&logo=Streamlit&logoColor=white)](https://streamlit.io)
 [![Power BI](https://img.shields.io/badge/Power%20BI-F2C811?style=for-the-badge&logo=powerbi&logoColor=black)](https://powerbi.microsoft.com/)
 [![Tableau](https://img.shields.io/badge/Tableau-E97627?style=for-the-badge&logo=tableau&logoColor=white)](https://www.tableau.com/)
+
+<div align="center">
+
+  <h3>Welcome to my Data Analyst portfolio for the OpenClassrooms program!</h3>
+
+</div>
+
+>🇫🇷 [Lire la version française](README_FR.md)
+
+---
 
 ## 🛠️ Technical Skills
 
