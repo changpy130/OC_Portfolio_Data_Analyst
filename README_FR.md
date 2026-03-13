@@ -39,6 +39,7 @@
 | [P5](#p5) | Base de données immobilière | Modélisation SQL, Requêtes complexes, Analyse | SQL, UML | [Repo P5](https://github.com/changpy130/OC_Portfolio_Data_Analyst/tree/main/P5-Cr%C3%A9ez%20et%20utilisez%20une%20base%20de%20donn%C3%A9es%20immobili%C3%A8re%20avec%20SQL) |
 | [P6](#p6)  | Gestion des données d'une boutique | Nettoyage, EDA, Visualisation, KPI | Python (NumPy, Pandas, Plotly, Streamlit), Jupyter Notebook | [Repo P6](https://github.com/changpy130/OC_Portfolio_Data_Analyst/tree/main/P6-Optimisez%20la%20gestion%20des%20donn%C3%A9es%20d'une%20boutique%20avec%20R%20ou%20Python) |
 | [P7](#p7) | Tableau de bord métier – Sanitoral | Visualisation de données, Power Query, DAX, Storytelling | Power BI | [Repo P7](https://github.com/changpy130/OC_Portfolio_Data_Analyst/tree/main/P7-Cr%C3%A9ez%20un%20tableau%20de%20bord%20dynamique%20avec%20Power%20BI%20pour%20visualiser%20l'avancement%20de%20projets) |
+| [P8](#p8) | Évolution du profil sociodémographique des étudiants Data | Pipeline DBT, Nettoyage de données, Analyse sociodémographique, Visualisation | Snowflake, DBT Cloud, Python (Pandas, Matplotlib, Seaborn) | [Repo P8](https://github.com/changpy130/OC_Portfolio_Data_Analyst/tree/main/P8-Analysez%20l'%C3%A9volution%20de%20profils%20sociod%C3%A9mographiques%20avec%20DBT) |
 
 ---
 
@@ -138,7 +139,27 @@ Power BI (Power Query, DAX), UML, Draw.io
 **📈 Insight clé / impact :**  
 Réalisation d'un tableau de bord multi-pages permettant à trois niveaux de direction (directeur général, régional, pays) de suivre les KPI projets en temps réel, avec des alertes automatiques déclenchées dès qu'un écart supérieur à 15 % est détecté entre prévisionnel et réalisé — pour des décisions plus rapides sur les portefeuilles IT et Marketing.
 
+---
+
+### P8 – Analysez l'évolution du profil sociodémographique des étudiants Data <a name="p8"></a>
+
+**🎯 Objectif :**  
+Analyser l'évolution du profil sociodémographique des étudiants inscrits aux parcours Data d'OpenClassrooms sur 4 ans (2022–2025), en comparant leur répartition par genre, âge et région aux données de référence de l'INSEE.
+
+**🛠 Compétences mobilisées :**  
+- Nettoyage des données (gestion des valeurs manquantes, harmonisation des noms de régions)
+- Construction d'un pipeline de transformation DBT en couches (staging → intermédiaire → marts)
+- Intégration de données publiques externes (INSEE) via jointure
+- Tests de qualité DBT (non-nullité, valeurs acceptées, test singulier de cohérence)
+- Analyse et visualisation des indicateurs sociodémographiques (genre, âge, région) sur 4 années
+- Documentation et traçabilité du pipeline (RGPD, reproductibilité)
+
+**💻 Outils utilisés :**  
+Snowflake, DBT Cloud, Python (Pandas, Matplotlib, Seaborn)
+
+**📈 Insight clé / impact :**  
+Mise en évidence des tendances d'évolution du profil étudiant sur 4 ans, avec identification des sous-représentations par genre et région par rapport à la population française active — fournissant des bases factuelles pour les réflexions stratégiques d'OpenClassrooms sur l'accessibilité et l'égalité des chances.
+
 ## 📬 Contact
 
 - [LinkedIn](https://www.linkedin.com/in/pei-tzu-chang-patty1022/)
-- Email: changpy130@gmail.com
