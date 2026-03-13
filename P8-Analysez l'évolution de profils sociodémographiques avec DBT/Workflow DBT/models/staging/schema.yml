@@ -1,0 +1,102 @@
+version: 2
+
+models:
+  - name: stg_etudiants
+    description: "Données étudiants nettoyées et standardisées"
+    columns:
+      - name: USER_ID
+        description: "Identifiant étudiant"
+        tests:
+          - not_null
+
+      - name: AGE_GROUP
+        description: "Tranche d'âge"
+        data_tests:
+          - not_null
+          - accepted_values:
+              arguments:
+                values:
+                  - '20-24 ans'
+                  - '25-29 ans'
+                  - '30-34 ans'
+                  - '35-39 ans'
+                  - '40-44 ans'
+                  - '45-49 ans'
+                  - '50-54 ans'
+                  - '55-59 ans'
+                  - '60 ans ou plus'
+
+      - name: GENDER
+        description: "Genre (après traitement des valeurs manquantes)"
+        data_tests:
+          - not_null
+          - accepted_values:
+              arguments: 
+                values: ['F', 'M', 'Non renseigné']
+
+      - name: YEAR_PATH_STARTED
+        description: "Année de début"
+        data_tests:
+          - not_null
+          - accepted_values:
+              arguments: 
+                values: [2022, 2023, 2024, 2025]
+
+      - name: REGION
+        description: "Région de France"
+        data_tests:
+          - not_null
+          
+      - name: PATH_CATEGORY_NAME
+        description: "Nom de formation"
+        data_tests:
+          - not_null
+          - accepted_values:
+              arguments: 
+                values: ['Data']
+          
+  - name: stg_insee
+    columns:
+      - name: YEAR
+        description: "Année"
+        data_tests:
+          - not_null
+          - accepted_values:
+              arguments: 
+                values: [2022, 2023, 2024, 2025]
+      
+      - name: REGION
+        description: "Région de France"
+        data_tests:
+          - not_null
+      
+      - name: AGE_GROUP
+        description: "Classe d'âge de population"
+        data_tests:
+          - not_null
+          - accepted_values:
+              arguments:
+                values:
+                  - '20-24 ans'
+                  - '25-29 ans'
+                  - '30-34 ans'
+                  - '35-39 ans'
+                  - '40-44 ans'
+                  - '45-49 ans'
+                  - '50-54 ans'
+                  - '55-59 ans'
+                  - '60 ans ou plus'
+      
+      - name: GENDER
+        description: "Genre de population (F/M)"
+        data_tests:
+          - not_null
+          - accepted_values:
+              arguments: 
+                values: ['F', 'M']
+      
+      - name: POPULATION
+        description: "Population française de référence"
+        data_tests:
+          - not_null
+          

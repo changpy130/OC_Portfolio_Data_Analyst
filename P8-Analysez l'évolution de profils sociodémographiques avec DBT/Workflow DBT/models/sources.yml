@@ -1,0 +1,37 @@
+version: 2
+
+sources:
+  - name: raw_data
+    description: "Données brutes importées dans Snowflake"
+    database: P8_OPENCLASSROOMS   
+    schema: RAW_DATA          
+    tables:
+      - name: ETUDIANTS
+        description: "Données sociodémographiques des étudiants Data OC"
+        columns:
+          - name: USER_ID
+            description: "Identifiant technique unique de l'étudiant"
+          - name: PATH_CATEGORY_NAME
+            description: "Catégorie du parcours suivi (Data)"
+          - name: AGE_GROUP
+            description: "Classe d'âge au moment du début du parcours"
+          - name: GENDER
+            description: "Genre déclaré par l'étudiant (F/M ou vide)"
+          - name: REGION
+            description: "Région de résidence"
+          - name: YEAR_PATH_STARTED
+            description: "Année de début du parcours"
+
+      - name: INSEE_POPULATION
+        description: "Données de population d'INSEE 2022-2025"
+        columns:
+          - name: YEAR
+            description: "Année"
+          - name: REGION
+            description: "Région de France"
+          - name: AGE_GROUP
+            description: "Classe d'âge de population"
+          - name: GENDER
+            description: "Genre de population (F/M)"
+          - name: POPULATION
+            description: "Population française de référence"

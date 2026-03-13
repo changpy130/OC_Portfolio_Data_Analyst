@@ -1,0 +1,99 @@
+version: 2
+
+models:
+  - name: fct_full_join
+    description: "Table complète après la jointure entre OC et INSEE"
+    columns:
+      - name: YEAR
+        description: "Année"
+        data_tests:
+          - not_null
+          - accepted_values:
+              arguments:
+                values: [2022, 2023, 2024, 2025]
+
+      - name: REGION
+        description: "Région de France"
+        data_tests:
+          - not_null
+          
+      - name: AGE_GROUP
+        description: "Classe d'âge de population"
+        data_tests:
+          - not_null
+          
+      - name: GENDER
+        description: "Genre de population (F/M)"
+        data_tests:
+          - not_null
+          - accepted_values:
+              arguments:
+                values: ['F', 'M', 'Non renseigné']
+
+      - name: NB_ETUDIANTS
+        description: "Nombre d'étudiants"
+          
+      - name: POPULATION_INSEE
+        description: "Population française de référence"
+
+  - name: fct_summary_analysis
+    description: "Table finale d'analyse sociodémographique - étudiants OC vs population INSEE"
+    columns:
+      - name: YEAR
+        description: "Année"
+        data_tests:
+          - not_null
+          - unique
+          - accepted_values:
+              arguments:
+                values: [2022, 2023, 2024, 2025]
+
+      - name: NB_ETUDIANTS
+        description: "Nombre d'étudiants"
+        data_tests:
+          - not_null
+      
+      - name: PCT_FEMMES_OC
+        description: "Pourcentage de femmes parmi les étudiants OC"
+        data_tests:
+          - not_null
+          
+      - name: PCT_FEMMES_INSEE
+        description: "Pourcentage de femmes dans la population française"
+        data_tests:
+          - not_null
+
+      - name: PCT_HOMMES_OC
+        description: "Pourcentage d'hommes parmi les étudiants OC"
+        data_tests:
+          - not_null
+      
+      - name: PCT_HOMMES_INSEE
+        description: "Pourcentage d'hommes dans la population française"
+        data_tests:
+          - not_null
+
+      - name: PCT_NON_RENSEIGNE
+        description: "Pourcentage de sexe non renseigné parmi les étudiants OC"
+        data_tests:
+          - not_null
+
+      - name: AGE_GROUP_MAJORITAIRE
+        description: "La tranche d'âge la plus représentée parmi les étudiants OC"
+        data_tests:
+          - not_null
+
+      - name: PCT_AGE_GROUP_MAJORITAIRE
+        description: "Pourcentage de la tranche d'âge la plus représentée parmi les étudiants OC"
+        data_tests:
+          - not_null
+
+      - name: REGION_MAJORITAIRE
+        description: "La région la plus représentée parmi les étudiants OC"
+        data_tests:
+          - not_null
+
+      - name: PCT_REGION_MAJORITAIRE
+        description: "Pourcentage de la région la plus représentée parmi les étudiants OC"
+        data_tests:
+          - not_null

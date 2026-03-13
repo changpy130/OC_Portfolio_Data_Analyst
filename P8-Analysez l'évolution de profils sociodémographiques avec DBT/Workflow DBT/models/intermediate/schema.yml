@@ -1,0 +1,57 @@
+version: 2
+
+models:
+  - name: int_etudiants_uniques
+    description: "Données d'étudiants uniques"
+    columns:
+      - name: USER_ID
+        description: "Identifiant unique"
+        data_tests:
+          - unique
+          
+  - name: int_etudiants_insee_joined
+    description: "Table de jointure entre OC et INSEE"
+    columns:
+      - name: YEAR
+        description: "Année"
+        data_tests:
+          - not_null
+          - accepted_values:
+              arguments: 
+                values: [2022, 2023, 2024, 2025]
+      
+      - name: REGION
+        description: "Région de France"
+        data_tests:
+          - not_null
+
+      - name: AGE_GROUP
+        description: "Classe d'âge de population"
+        data_tests:
+          - not_null
+          - accepted_values:
+              arguments:
+                values:
+                  - '20-24 ans'
+                  - '25-29 ans'
+                  - '30-34 ans'
+                  - '35-39 ans'
+                  - '40-44 ans'
+                  - '45-49 ans'
+                  - '50-54 ans'
+                  - '55-59 ans'
+                  - '60 ans ou plus'
+      
+      - name: GENDER
+        description: "Genre de population (F/M/Non renseigné)"
+        data_tests:
+          - not_null
+          - accepted_values:
+              arguments: 
+                values: ['F', 'M', 'Non renseigné']
+      
+      - name: NB_ETUDIANTS
+        description: "Nombre d'étudiants"
+
+      - name: POPULATION_INSEE
+        description: "Population française de référence"
