@@ -1,0 +1,21 @@
+# dashboard/requirements.txt
+
+# Data
+pandas>=2.0.0
+numpy>=1.24.0
+
+# Visualisation
+plotly>=5.18.0
+
+# Statistics
+scipy>=1.11.0
+statsmodels>=0.14.0
+
+# Dashboard
+streamlit>=1.30.0
+
+# API calls
+requests
+
+# Testing
+pytest

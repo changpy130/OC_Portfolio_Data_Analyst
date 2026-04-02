@@ -24,7 +24,6 @@ DATA_DIR = Path(__file__).parent.parent / "data"
 @pytest.fixture
 def df():
     """Load real data once, shared between all tests."""
-    # df = load_all_clients()
     df = pd.read_csv(
         DATA_DIR / "processed/all_clients.csv", 
         sep=',',
