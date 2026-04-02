@@ -1,0 +1,18 @@
+# Virtual environment
+venv/
+.venv/
+env/
+
+# Python cache
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# SQLite DB (optional — remove this line if you want to commit it)
+*.db
+
+# Jupyter
+.ipynb_checkpoints/
+
+# OS
+.DS_Store
