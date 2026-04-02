@@ -6,11 +6,13 @@
 [![pytest](https://img.shields.io/badge/pytest-0A9EDC?style=for-the-badge&logo=pytest&logoColor=white)](https://pytest.org)
 [![GitHub Actions](https://img.shields.io/badge/GitHub%20Actions-2088FF?style=for-the-badge&logo=githubactions&logoColor=white)](https://github.com/features/actions)
 
-> 🇫🇷 [Lire la version française](#version-française)
+[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://changportfoliodataanalyst-p9lapage.streamlit.app/)
 
 ---
 
 ## 🎯 Project Context
+
+> 🇫🇷 [Lire la version française](#version-française)
 
 Lapage is a French bookstore chain that launched its e-commerce platform 2 years ago. This interactive dashboard analyses 2 years of online sales data to support strategic decisions on pricing, product offering, and customer targeting.
 

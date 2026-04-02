@@ -43,7 +43,7 @@
 | [P6](#p6)  | Gestion des données d'une boutique | Nettoyage, EDA, Visualisation, KPI | Python (NumPy, Pandas, Plotly, Streamlit), Jupyter Notebook | [Repo P6](https://github.com/changpy130/OC_Portfolio_Data_Analyst/tree/main/P6-Optimisez%20la%20gestion%20des%20donn%C3%A9es%20d'une%20boutique%20avec%20R%20ou%20Python) |
 | [P7](#p7) | Tableau de bord métier – Sanitoral | Visualisation de données, Power Query, DAX, Storytelling | Power BI | [Repo P7](https://github.com/changpy130/OC_Portfolio_Data_Analyst/tree/main/P7-Cr%C3%A9ez%20un%20tableau%20de%20bord%20dynamique%20avec%20Power%20BI%20pour%20visualiser%20l'avancement%20de%20projets) |
 | [P8](#p8) | Évolution du profil sociodémographique des étudiants Data | Pipeline DBT, Nettoyage de données, Analyse sociodémographique, Visualisation | Snowflake, DBT Cloud, Python (Pandas, Matplotlib, Seaborn) | [Repo P8](https://github.com/changpy130/OC_Portfolio_Data_Analyst/tree/main/P8-Analysez%20l'%C3%A9volution%20de%20profils%20sociod%C3%A9mographiques%20avec%20DBT) |
-| [P9](#p9) | Analyse des ventes – Lapage | EDA, Analyse statistique, Dashboard interactif, API REST, CI/CD | Python, Streamlit, FastAPI, SQLite, GitHub Actions | [Repo P9](https://github.com/changpy130/OC_Portfolio_Data_Analyst/tree/main/P9-Analysez%20les%20ventes%20d'une%20librairie%20avec%20R%20ou%20Python) |
+| [P9](#p9) | Analyse des ventes – Lapage | EDA, Analyse statistique, Dashboard interactif, API REST, CI/CD | Python, Streamlit, FastAPI, SQLite, GitHub Actions | [Repo P9](https://github.com/changpy130/OC_Portfolio_Data_Analyst/tree/main/P9-Analysez%20les%20ventes%20d'une%20librairie%20avec%20R%20ou%20Python) · [🌐 Live Demo](https://changportfoliodataanalyst-p9lapage.streamlit.app/) |
 
 ---
 
