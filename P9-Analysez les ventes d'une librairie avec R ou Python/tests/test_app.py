@@ -13,9 +13,9 @@ import pytest
 import pandas as pd
 import sys, os
 
-sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '..')))
-
-from src import load_all_clients
+from pathlib import Path
+# parent path
+DATA_DIR = Path(__file__).parent.parent / "data"
 
 # =============================================================================
 # FIXTURES (données partagées entre les tests)
@@ -24,7 +24,13 @@ from src import load_all_clients
 @pytest.fixture
 def df():
     """Load real data once, shared between all tests."""
-    df = load_all_clients()
+    # df = load_all_clients()
+    df = pd.read_csv(
+        DATA_DIR / "processed/all_clients.csv", 
+        sep=',',
+        low_memory=False
+    ).dropna(how='all')
+
     df['date'] = pd.to_datetime(df['date'])
     return df
 
