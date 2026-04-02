@@ -4,6 +4,7 @@
 [![Python](https://img.shields.io/badge/Python-3.11+-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org)
 [![DBeaver](https://img.shields.io/badge/DBeaver-372923?style=for-the-badge&logo=dbeaver&logoColor=white)](https://dbeaver.io/)
 [![Streamlit](https://img.shields.io/badge/Streamlit-FF4B4B?style=for-the-badge&logo=Streamlit&logoColor=white)](https://streamlit.io)
+[![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white)](https://fastapi.tiangolo.com/)
 [![Power BI](https://img.shields.io/badge/Power%20BI-F2C811?style=for-the-badge&logo=powerbi&logoColor=black)](https://powerbi.microsoft.com/)
 [![Tableau](https://img.shields.io/badge/Tableau-E97627?style=for-the-badge&logo=tableau&logoColor=white)](https://www.tableau.com/)
 [![dbt](https://img.shields.io/badge/dbt-FF694B?style=for-the-badge&logo=dbt&logoColor=white)](https://www.getdbt.com/)
@@ -26,6 +27,8 @@
 - Data Cleaning & EDA
 - Statistical Analysis
 - Data Visualisation (Power BI / Tableau)
+- REST API Development (FastAPI)
+- CI/CD (GitHub Actions, pytest)
 - DBT & Snowflake
 
 ---
@@ -40,6 +43,7 @@
 | [P6](#p6) | Store Data Management | Data Cleaning, EDA, Visualisation, KPIs | Python (NumPy, Pandas, Plotly, Streamlit), Jupyter Notebook | [Repo P6](https://github.com/changpy130/OC_Portfolio_Data_Analyst/tree/main/P6-Optimisez%20la%20gestion%20des%20donn%C3%A9es%20d'une%20boutique%20avec%20R%20ou%20Python) |
 | [P7](#p7) | Business Dashboard – Sanitoral | Data Visualisation, Power Query, DAX, Storytelling | Power BI | [Repo P7](https://github.com/changpy130/OC_Portfolio_Data_Analyst/tree/main/P7-Cr%C3%A9ez%20un%20tableau%20de%20bord%20dynamique%20avec%20Power%20BI%20pour%20visualiser%20l'avancement%20de%20projets) |
 | [P8](#p8) | Sociodemographic Profile of Data Path Students | DBT Pipeline, Data Cleaning, Sociodemographic Analysis, Visualisation | Snowflake, DBT Cloud, Python (Pandas, Matplotlib, Seaborn) | [Repo P8](https://github.com/changpy130/OC_Portfolio_Data_Analyst/tree/main/P8-Analysez%20l'%C3%A9volution%20de%20profils%20sociod%C3%A9mographiques%20avec%20DBT) |
+| [P9](#p9) | Bookstore Sales Analysis – Lapage | EDA, Statistical Analysis, Interactive Dashboard, REST API, CI/CD | Python, Streamlit, FastAPI, SQLite, GitHub Actions | [Repo P9](https://github.com/changpy130/OC_Portfolio_Data_Analyst/tree/main/P9-Analysez%20les%20ventes%20d'une%20librairie%20avec%20R%20ou%20Python) |
 
 ---
 
@@ -159,6 +163,28 @@ Snowflake, DBT Cloud, Python (Pandas, Matplotlib, Seaborn)
 
 **📈 Key Insight / Impact:**  
 Identified 4-year trends in student profile evolution, including gender and regional under-representation relative to the French active population — providing a factual basis for OpenClassrooms' strategic thinking on accessibility and equal opportunity.
+
+---
+
+### P9 – Bookstore Sales Analysis – Lapage <a name="p9"></a>
+
+**🎯 Objective:**
+Analyse 2 years of online sales data for Lapage, a French bookstore chain that recently launched its e-commerce platform, to provide actionable insights on sales performance, customer behaviour, and product strategy.
+
+**🛠 Skills Applied:**
+- End-to-end data pipeline (cleaning, EDA, statistical analysis)
+- Interactive multi-page dashboard with persistent filters
+- Statistical correlation analysis (Chi-2, ANOVA, Pearson/Spearman)
+- Lorenz curve and Gini coefficient for revenue concentration analysis
+- Moving average time series visualisation
+- REST API development and integration
+- Automated testing and CI/CD pipeline
+
+**💻 Tools Used:**  
+Python (Pandas, Plotly, Streamlit), FastAPI, SQLite, pytest, GitHub Actions
+
+**📈 Key Insight / Impact:**  
+Identified key sales trends including a back-to-school peak in September 2021, significant gender-based differences in book category preferences (Chi-2, p < 0.001), and a Pareto-like revenue concentration where the top 20% of clients generate ~55% of total revenue — providing a factual basis for targeted marketing and pricing decisions.
 
 ## 📬 Contact
 
