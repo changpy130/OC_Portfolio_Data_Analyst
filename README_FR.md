@@ -44,6 +44,7 @@
 | [P7](#p7) | Tableau de bord métier – Sanitoral | Visualisation de données, Power Query, DAX, Storytelling | Power BI | [Repo P7](https://github.com/changpy130/OC_Portfolio_Data_Analyst/tree/main/P7-Cr%C3%A9ez%20un%20tableau%20de%20bord%20dynamique%20avec%20Power%20BI%20pour%20visualiser%20l'avancement%20de%20projets) |
 | [P8](#p8) | Évolution du profil sociodémographique des étudiants Data | Pipeline DBT, Nettoyage de données, Analyse sociodémographique, Visualisation | Snowflake, DBT Cloud, Python (Pandas, Matplotlib, Seaborn) | [Repo P8](https://github.com/changpy130/OC_Portfolio_Data_Analyst/tree/main/P8-Analysez%20l'%C3%A9volution%20de%20profils%20sociod%C3%A9mographiques%20avec%20DBT) |
 | [P9](#p9) | Analyse des ventes – Lapage | EDA, Analyse statistique, Dashboard interactif, API REST, CI/CD | Python, Streamlit, FastAPI, SQLite, GitHub Actions | [Repo P9](https://github.com/changpy130/OC_Portfolio_Data_Analyst/tree/main/P9-Analysez%20les%20ventes%20d'une%20librairie%20avec%20R%20ou%20Python) · [🌐 Live Demo](https://changportfoliodataanalyst-p9lapage.streamlit.app/) |
+| [P10](#p10) | Étude d'accès à l'eau potable – DWFA | Prétraitement des données, Dashboard multi-vues, Visualisation géospatiale, Storytelling | Python (Pandas), Tableau | [Repo P10](https://github.com/changpy130/OC_Portfolio_Data_Analyst/tree/main/P10-Faites%20une%20%C3%A9tude%20sur%20l'eau%20potable) · [🌐 Tableau Public](https://public.tableau.com/app/profile/patti.c7785/viz/P10practice/Monde1) |
 
 ---
 
@@ -185,6 +186,29 @@ Python (Pandas, Plotly, Streamlit), FastAPI, SQLite, pytest, GitHub Actions
 
 **📈 Insight clé / impact :**  
 Identification des tendances clés dont un pic de ventes à la rentrée de septembre 2021, des différences significatives de préférences par catégorie selon le genre (Chi-2, p < 0,001), et une concentration des revenus de type Pareto où les 20% de clients les plus actifs génèrent ~55% du CA total — fournissant une base factuelle pour des décisions de marketing ciblé et d'optimisation tarifaire.
+
+---
+
+### P10 – Étude d'accès à l'eau potable – DWFA <a name="p10"></a>
+
+**🎯 Objectif :**  
+Intervenir en tant que consultant data analyst pour l'ONG DWFA (Drinking Water For All), dans le cadre d'une demande de financement visant à identifier les pays prioritaires pour une intervention dans l'accès à l'eau potable. L'objectif : déterminer dans lequel des trois domaines d'expertise agir — création de services, modernisation des infrastructures, ou consulting auprès des gouvernements.
+
+**🛠 Compétences mobilisées :**  
+- Prétraitement et jointure de sources multiples (FAO, OMS, Banque Mondiale)
+- Gestion des valeurs manquantes et filtrage par granularité (Total vs Urban/Rural)
+- Harmonisation des noms de pays et résolution de conflits de clés de jointure
+- Rédaction d'un blueprint documentant les besoins du tableau de bord
+- Construction d'une histoire Tableau multi-vues (mondiale, continentale, nationale)
+- Conception de nuages de points spécifiques aux trois domaines d'intervention
+- Filtre de stabilité politique ajustable par l'utilisateur
+- Respect des critères d'accessibilité dans la conception du tableau de bord
+
+**💻 Outils utilisés :**  
+Python (Pandas), Tableau (Tableau Public)
+
+**📈 Insight clé / impact :**  
+Production d'une histoire Tableau en trois dashboards permettant à DWFA d'identifier les priorités d'intervention à l'échelle mondiale, continentale et nationale — en combinant taux d'accès à l'eau, mortalité, qualité des infrastructures et stabilité politique dans des nuages de points actionnables pour chacun des trois domaines d'expertise.
 
 ## 📬 Contact
 

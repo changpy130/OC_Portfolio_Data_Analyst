@@ -44,6 +44,7 @@
 | [P7](#p7) | Business Dashboard – Sanitoral | Data Visualisation, Power Query, DAX, Storytelling | Power BI | [Repo P7](https://github.com/changpy130/OC_Portfolio_Data_Analyst/tree/main/P7-Cr%C3%A9ez%20un%20tableau%20de%20bord%20dynamique%20avec%20Power%20BI%20pour%20visualiser%20l'avancement%20de%20projets) |
 | [P8](#p8) | Sociodemographic Profile of Data Path Students | DBT Pipeline, Data Cleaning, Sociodemographic Analysis, Visualisation | Snowflake, DBT Cloud, Python (Pandas, Matplotlib, Seaborn) | [Repo P8](https://github.com/changpy130/OC_Portfolio_Data_Analyst/tree/main/P8-Analysez%20l'%C3%A9volution%20de%20profils%20sociod%C3%A9mographiques%20avec%20DBT) |
 | [P9](#p9) | Bookstore Sales Analysis – Lapage | EDA, Statistical Analysis, Interactive Dashboard, REST API, CI/CD | Python, Streamlit, FastAPI, SQLite, GitHub Actions | [Repo P9](https://github.com/changpy130/OC_Portfolio_Data_Analyst/tree/main/P9-Analysez%20les%20ventes%20d'une%20librairie%20avec%20R%20ou%20Python) · [🌐 Live Demo](https://changportfoliodataanalyst-p9lapage.streamlit.app/) |
+| [P10](#p10) | Drinking Water Access Study – DWFA | Data Preprocessing, Multi-view Dashboard, Geospatial Visualisation, Storytelling | Python (Pandas), Tableau | [Repo P10](https://github.com/changpy130/OC_Portfolio_Data_Analyst/tree/main/P10-Faites%20une%20%C3%A9tude%20sur%20l'eau%20potable) · [🌐 Tableau Public](https://public.tableau.com/app/profile/patti.c7785/viz/P10practice/Monde1) |
 
 ---
 
@@ -185,6 +186,29 @@ Python (Pandas, Plotly, Streamlit), FastAPI, SQLite, pytest, GitHub Actions
 
 **📈 Key Insight / Impact:**  
 Identified key sales trends including a back-to-school peak in September 2021, significant gender-based differences in book category preferences (Chi-2, p < 0.001), and a Pareto-like revenue concentration where the top 20% of clients generate ~55% of total revenue — providing a factual basis for targeted marketing and pricing decisions.
+
+---
+
+### P10 – Drinking Water Access Study – DWFA <a name="p10"></a>
+
+**🎯 Objective:**  
+Act as a data analyst consultant for DWFA (Drinking Water For All), an NGO seeking funding to intervene in countries lacking safe drinking water access. The goal was to identify target countries and determine which of three intervention domains applies: building new water services from scratch, modernising existing infrastructure, or advising governments on water policy.
+
+**🛠 Skills Applied:**  
+- Data preprocessing and multi-source joining (FAO, WHO, World Bank datasets)
+- Handling missing values and granularity filtering (preserving nulls vs. imputation)
+- Country name standardisation and join key reconciliation
+- Blueprint documentation of dashboard requirements
+- Building a multi-view Tableau Story (global, continental, national)
+- Domain-specific scatter plot design for three intervention types
+- User-adjustable political stability filter
+- Accessibility compliance in dashboard design
+
+**💻 Tools Used:**  
+Python (Pandas), Tableau (Tableau Public)
+
+**📈 Key Insight / Impact:**  
+Produced a three-dashboard Tableau Story enabling DWFA to pinpoint intervention priorities at global, continental, and country level — combining water access rates, mortality indicators, infrastructure quality, and political stability scores into actionable domain-specific scatter plots for each of the three expertise areas.
 
 ## 📬 Contact
 
