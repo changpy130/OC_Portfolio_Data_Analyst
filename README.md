@@ -26,6 +26,7 @@
 - SQL
 - Data Cleaning & EDA
 - Statistical Analysis
+- Machine Learning
 - Data Visualisation (Power BI / Tableau)
 - REST API Development (FastAPI)
 - CI/CD (GitHub Actions, pytest)
@@ -45,6 +46,8 @@
 | [P8](#p8) | Sociodemographic Profile of Data Path Students | DBT Pipeline, Data Cleaning, Sociodemographic Analysis, Visualisation | Snowflake, DBT Cloud, Python (Pandas, Matplotlib, Seaborn) | [Repo P8](https://github.com/changpy130/OC_Portfolio_Data_Analyst/tree/main/P8-Analysez%20l'%C3%A9volution%20de%20profils%20sociod%C3%A9mographiques%20avec%20DBT) |
 | [P9](#p9) | Bookstore Sales Analysis – Lapage | EDA, Statistical Analysis, Interactive Dashboard, REST API, CI/CD | Python, Streamlit, FastAPI, SQLite, GitHub Actions | [Repo P9](https://github.com/changpy130/OC_Portfolio_Data_Analyst/tree/main/P9-Analysez%20les%20ventes%20d'une%20librairie%20avec%20R%20ou%20Python) · [🌐 Live Demo](https://changportfoliodataanalyst-p9lapage.streamlit.app/) |
 | [P10](#p10) | Drinking Water Access Study – DWFA | Data Preprocessing, Multi-view Dashboard, Geospatial Visualisation, Storytelling | Python (Pandas), Tableau | [Repo P10](https://github.com/changpy130/OC_Portfolio_Data_Analyst/tree/main/P10-Faites%20une%20%C3%A9tude%20sur%20l'eau%20potable) · [🌐 Tableau Public](https://public.tableau.com/app/profile/patti.c7785/viz/P10practice/Monde1) |
+| [P11](#p11) | International Market Study – La poule qui chante | PCA, Clustering (HAC + K-Means), Feature Engineering | Python (Pandas, Scikit-learn, Matplotlib, Seaborn) | [Repo P11](https://github.com/changpy130/OC_Portfolio_Data_Analyst/tree/main/P11-Produisez%20une%20%C3%A9tude%20de%20march%C3%A9%20avec%20R%20ou%20Python) |
+| [P12](#p12) | Counterfeit Banknote Detection – ONCFM | Supervised & Unsupervised Learning, Classification, Logistic Regression, K-Means, KNN, Random Forest | Python (Pandas, Scikit-learn, Matplotlib, Seaborn), Jupyter Notebook | [Repo P12](...) |
 
 ---
 
@@ -209,6 +212,48 @@ Python (Pandas), Tableau (Tableau Public)
 
 **📈 Key Insight / Impact:**  
 Produced a three-dashboard Tableau Story enabling DWFA to pinpoint intervention priorities at global, continental, and country level — combining water access rates, mortality indicators, infrastructure quality, and political stability scores into actionable domain-specific scatter plots for each of the three expertise areas.
+
+---
+
+### P11 – Produce a Market Study with R or Python <a name="p11"></a>
+
+**🎯 Objective:**  
+Analyse the international expansion feasibility for *La poule qui chante*, a French organic poultry company. The goal was to identify and group target export countries using FAO, World Bank, and other open data sources.
+
+**🛠 Skills Applied:**  
+- Multi-source data collection and merging (FAO, World Bank, global datasets)
+- Data cleaning and preparation (missing values, outliers, feature engineering)
+- Exploratory analysis and variable selection (minimum 8 variables, 100+ countries)
+- Principal Component Analysis (PCA): correlation circle, individual projection
+- Clustering: Hierarchical Agglomerative Clustering (HAC) and K-Means
+- Presenting results to a non-technical executive audience (COMEX)
+
+**💻 Tools Used:**  
+Python (Pandas, Scikit-learn, Matplotlib, Seaborn), Jupyter Notebook
+
+**📈 Key Insight / Impact:**  
+Identified priority country clusters for organic poultry exports by combining economic, food availability, and political stability indicators — delivering concrete, actionable recommendations to the executive committee.
+
+---
+
+### P12 – Detect Counterfeit Banknotes with Python <a name="p12"></a>
+
+**🎯 Objective:**  
+Build an automatic counterfeit euro banknote detection algorithm for the ONCFM (French National Organisation Against Counterfeiting), using geometric measurements captured by a scanning machine (length, height, margins, diagonal).
+
+**🛠 Skills Applied:**  
+- Data cleaning and missing value imputation  
+- Descriptive and exploratory analysis of geometric dimensions  
+- Unsupervised learning: K-Means with centroid-based prediction  
+- Supervised learning: Logistic Regression, KNN, Random Forest  
+- Train/test split and model evaluation (confusion matrix, accuracy, recall, F1)  
+- Functional application script (accepts CSV file path or manual values as input)  
+
+**💻 Tools Used:**  
+Python (Pandas, Scikit-learn, Matplotlib, Seaborn), Jupyter Notebook
+
+**📈 Key Insight / Impact:**  
+Selected the best-performing final model to minimise false negatives — ensuring no counterfeit slips through — with a standalone application capable of predicting a banknote's authenticity from geometric measurements alone.
 
 ## 📬 Contact
 

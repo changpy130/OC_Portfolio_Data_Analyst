@@ -26,6 +26,7 @@
 - SQL (DBeaver)
 - Data Cleaning  & EDA
 - Analyse statistique
+- Machine Learning
 - Visualisation (Power BI / Tableau)
 - Développement d'API REST (FastAPI)
 - CI/CD (GitHub Actions, pytest)
@@ -45,6 +46,8 @@
 | [P8](#p8) | Évolution du profil sociodémographique des étudiants Data | Pipeline DBT, Nettoyage de données, Analyse sociodémographique, Visualisation | Snowflake, DBT Cloud, Python (Pandas, Matplotlib, Seaborn) | [Repo P8](https://github.com/changpy130/OC_Portfolio_Data_Analyst/tree/main/P8-Analysez%20l'%C3%A9volution%20de%20profils%20sociod%C3%A9mographiques%20avec%20DBT) |
 | [P9](#p9) | Analyse des ventes – Lapage | EDA, Analyse statistique, Dashboard interactif, API REST, CI/CD | Python, Streamlit, FastAPI, SQLite, GitHub Actions | [Repo P9](https://github.com/changpy130/OC_Portfolio_Data_Analyst/tree/main/P9-Analysez%20les%20ventes%20d'une%20librairie%20avec%20R%20ou%20Python) · [🌐 Live Demo](https://changportfoliodataanalyst-p9lapage.streamlit.app/) |
 | [P10](#p10) | Étude d'accès à l'eau potable – DWFA | Prétraitement des données, Dashboard multi-vues, Visualisation géospatiale, Storytelling | Python (Pandas), Tableau | [Repo P10](https://github.com/changpy130/OC_Portfolio_Data_Analyst/tree/main/P10-Faites%20une%20%C3%A9tude%20sur%20l'eau%20potable) · [🌐 Tableau Public](https://public.tableau.com/app/profile/patti.c7785/viz/P10practice/Monde1) |
+| [P11](#p11) | Étude de marché internationale – La poule qui chante | ACP, Clustering (CAH + K-Means), Feature Engineering | Python (Pandas, Scikit-learn, Matplotlib, Seaborn) | [Repo P11](https://github.com/changpy130/OC_Portfolio_Data_Analyst/tree/main/P11-Produisez%20une%20%C3%A9tude%20de%20march%C3%A9%20avec%20R%20ou%20Python) |
+| [P12](#p12) | Détection de faux billets – ONCFM | Apprentissage supervisé & non supervisé, Classification, Régression logistique, K-Means, KNN, Random Forest | Python (Pandas, Scikit-learn, Matplotlib, Seaborn), Jupyter Notebook | [Repo P12](...) |
 
 ---
 
@@ -209,6 +212,48 @@ Python (Pandas), Tableau (Tableau Public)
 
 **📈 Insight clé / impact :**  
 Production d'une histoire Tableau en trois dashboards permettant à DWFA d'identifier les priorités d'intervention à l'échelle mondiale, continentale et nationale — en combinant taux d'accès à l'eau, mortalité, qualité des infrastructures et stabilité politique dans des nuages de points actionnables pour chacun des trois domaines d'expertise.
+
+---
+
+### P11 – Produisez une étude de marché avec R ou Python <a name="p11"></a>
+
+**🎯 Objectif :**  
+Analyser la faisabilité d'une expansion internationale pour *La poule qui chante*, entreprise française spécialisée dans le poulet biologique. L'objectif : identifier et regrouper les pays cibles à l'export à partir de données FAO, Banque Mondiale et autres sources open data.
+
+**🛠 Compétences mobilisées :**  
+- Collecte et fusion de données multi-sources (FAO, Banque Mondiale, données mondiales)
+- Nettoyage et préparation des données (valeurs manquantes, outliers, feature engineering)
+- Analyse exploratoire et sélection de variables (minimum 8 variables, 100+ pays)
+- Analyse en Composantes Principales (ACP) : cercle des corrélations, projection des individus
+- Clustering : Classification Ascendante Hiérarchique (CAH) et K-Means
+- Présentation des résultats à un public non technique (COMEX)
+
+**💻 Outils utilisés :**  
+Python (Pandas, Scikit-learn, Matplotlib, Seaborn), Jupyter Notebook
+
+**📈 Insight clé / impact :**  
+Identification de groupements de pays prioritaires pour l'export de poulet biologique, en combinant indicateurs économiques, alimentaires et de stabilité politique — avec des recommandations concrètes présentées au comité exécutif.
+
+---
+
+### P12 – Détectez des faux billets avec Python <a name="p12"></a>
+
+**🎯 Objectif :**  
+Développer un algorithme de détection automatique de faux billets en euros pour l'ONCFM (Organisation nationale de lutte contre le faux-monnayage), à partir des caractéristiques géométriques des billets scannés (longueur, hauteur, marges, diagonale).
+
+**🛠 Compétences mobilisées :**  
+- Nettoyage et imputation des valeurs manquantes  
+- Analyse descriptive et exploratoire des dimensions géométriques  
+- Apprentissage non supervisé : K-Means avec analyse des centroïdes  
+- Apprentissage supervisé : Régression logistique, KNN, Random Forest  
+- Séparation train/test et évaluation des modèles (matrice de confusion, accuracy, recall, F1)  
+- Développement d'un script applicatif fonctionnel (input CSV ou valeurs manuelles)  
+
+**💻 Outils utilisés :**  
+Python (Pandas, Scikit-learn, Matplotlib, Seaborn), Jupyter Notebook
+
+**📈 Insight clé / impact :**  
+Sélection du modèle final le plus performant pour minimiser les faux négatifs — garantissant qu'aucun faux billet ne passe inaperçu — avec une application fonctionnelle capable de prédire la nature d'un billet à partir de ses seules dimensions géométriques.
 
 ## 📬 Contact
 
