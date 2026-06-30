@@ -232,7 +232,6 @@ st.markdown("---")
 
 st.subheader("🧠 Carte mentale")
 st.caption("Vue d'ensemble du portfolio : organisation des idées et liens entre les livrables.")
-show_pdf(str(CARTE_MENTALE_PATH))
 show_pdf_download(CARTE_MENTALE_PATH, "carte_mentale")
 
 st.markdown("---")
