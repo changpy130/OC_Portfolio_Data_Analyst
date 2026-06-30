@@ -1,0 +1,250 @@
+from dataclasses import dataclass, field
+from typing import List, Optional
+
+@dataclass
+class Project:
+    id: str                        # "P3", "P4", etc.
+    title: str                     # Display title
+    subtitle: str                  # One-liner description
+    objective: str                 # 🎯 Objectif
+    skills: List[str]              # 🛠 Compétences mobilisées
+    tools: List[str]               # 💻 Outils
+    insight: str                   # 📈 Insight clé
+    soft_skills: List[str]         # Soft skills for this project
+    tags: List[str]                # For filtering (SQL, Python, etc.)
+    repo_url: Optional[str] = None
+    demo_url: Optional[str] = None
+    icon: str = "📁"
+
+
+PROJECTS = [
+    Project(
+        id="P1",
+        title="Prenez en main votre formation",
+        subtitle="Définir le cadre de la formation",
+        objective="Planifier le parcours de cette formation.",
+        skills=[
+            "Écriture des attendus du métier",
+            "Identifier les soft skills du métier",
+        ],
+        tools=["Word"],
+        insight="Cadrer les deadlines pour chaque projet en amont pourrait faciliter le démarrage.",
+        soft_skills=["Rigueur", "Curiosité"],
+        tags=["Word"],
+        icon="📑",
+    ),
+    Project(
+        id="P2",
+        title="Faites une analyse de ventes",
+        subtitle="Analyse du rapport mensuel",
+        objective="Sélectionner et analyser les graphiques les plus pertinents.",
+        skills=[
+            "Rédiger des fichiers Excel.",
+            "Analyse des graphiques",
+        ],
+        tools=["Excel"],
+        insight="Optimiser l'accessibilité par le choix du graphique.",
+        soft_skills=["Communication", "Esprit analytique"],
+        tags=["Excel", "Visualisation"],
+        icon="📊",
+    ),
+    Project(
+        id="P3",
+        title="Requêtez une base de données avec SQL",
+        subtitle="Analyse d'une base de données régionale via SQL",
+        objective="Récupérer et analyser des données dans une base de données pour répondre à des questions métier.",
+        skills=[
+            "Écriture de requêtes SQL",
+            "Filtrage et agrégation de données",
+            "Analyse exploratoire",
+        ],
+        tools=["SQL", "DBeaver"],
+        insight="Optimisation des requêtes pour réduire le temps d'analyse et améliorer la prise de décision.",
+        soft_skills=["Rigueur", "Curiosité analytique"],
+        tags=["SQL"],
+        repo_url="https://github.com/changpy130/OC_Portfolio_Data_Analyst/tree/main/P3-Requ%C3%AAtez%20une%20base%20de%20donn%C3%A9es%20avec%20SQL",
+        icon="🗄️",
+    ),
+    Project(
+        id="P4",
+        title="Étude de santé publique",
+        subtitle="Analyse de données de santé publique avec Python",
+        objective="Analyser des données de santé publique pour identifier des tendances et facteurs clés impactant la population.",
+        skills=[
+            "Nettoyage et préparation des données",
+            "Analyse statistique descriptive et exploratoire",
+            "Création de visualisations interprétables",
+            "Interprétation dans un contexte public",
+        ],
+        tools=["Python", "Pandas", "Matplotlib", "Seaborn", "Jupyter Notebook"],
+        insight="Identification de tendances majeures dans les indicateurs de santé, facilitant la priorisation des actions publiques.",
+        soft_skills=["Communication", "Esprit critique"],
+        tags=["Python", "EDA", "Visualisation"],
+        repo_url="https://github.com/changpy130/OC_Portfolio_Data_Analyst/tree/main/P4-R%C3%A9alisez%20une%20%C3%A9tude%20de%20sant%C3%A9%20publique%20avec%20R%20ou%20Python",
+        icon="🏥",
+    ),
+    Project(
+        id="P5",
+        title="Base de données immobilière",
+        subtitle="Modélisation et requêtes SQL pour une agence immobilière",
+        objective="Créer une base de données pour gérer les informations immobilières et produire des analyses exploitables.",
+        skills=[
+            "Modélisation et création de base de données relationnelle",
+            "Écriture de requêtes SQL complexes",
+            "Analyse des tendances de marché",
+            "Gestion et structuration des données",
+        ],
+        tools=["SQL", "DBeaver", "UML", "Draw.io"],
+        insight="Suivi précis des biens et transactions, identification des segments de marché les plus rentables.",
+        soft_skills=["Rigueur", "Organisation"],
+        tags=["SQL", "Modélisation"],
+        repo_url="https://github.com/changpy130/OC_Portfolio_Data_Analyst/tree/main/P5-Cr%C3%A9ez%20et%20utilisez%20une%20base%20de%20donn%C3%A9es%20immobili%C3%A8re%20avec%20SQL",
+        icon="🏠",
+    ),
+    Project(
+        id="P6",
+        title="Gestion des données d'une boutique",
+        subtitle="EDA et KPIs pour optimiser la gestion d'une boutique",
+        objective="Optimiser la gestion et l'analyse des données d'une boutique pour mieux comprendre ventes, stock et rentabilité.",
+        skills=[
+            "Nettoyage et structuration des données de vente et stock",
+            "Analyse exploratoire et visualisation des KPIs",
+            "Détection de produits stratégiques ou sous-performants",
+            "Recommandations opérationnelles",
+        ],
+        tools=["Python", "NumPy", "Pandas", "Plotly", "Streamlit", "Jupyter Notebook"],
+        insight="Mise en évidence des produits concentrant la valeur du stock, amélioration des recommandations commerciales.",
+        soft_skills=["Pédagogie", "Sens des priorités"],
+        tags=["Python", "EDA", "Visualisation", "Streamlit"],
+        repo_url="https://github.com/changpy130/OC_Portfolio_Data_Analyst/tree/main/P6-Optimisez%20la%20gestion%20des%20donn%C3%A9es%20d'une%20boutique%20avec%20R%20ou%20Python",
+        icon="🛒",
+    ),
+    Project(
+        id="P7",
+        title="Tableau de bord Power BI – Sanitoral",
+        subtitle="Dashboard interactif multi-profils pour un groupe international",
+        objective="Concevoir un tableau de bord Power BI interactif pour Sanitoral afin de suivre la performance du portefeuille de projets dans 4 régions mondiales.",
+        skills=[
+            "Product Strategy Canvas et user stories",
+            "Nettoyage avec Power Query Editor",
+            "Modélisation des données et relations",
+            "Mesures DAX et KPIs (coûts, délais, livrables)",
+            "Tableaux de bord interactifs multi-profils",
+            "Storytelling et communication visuelle",
+        ],
+        tools=["Power BI", "Power Query", "DAX", "UML", "Draw.io"],
+        insight="Dashboard multi-pages avec alertes automatiques (écart > 15%) pour trois niveaux de direction : décisions plus rapides sur les portefeuilles IT et Marketing.",
+        soft_skills=["Storytelling", "Adaptabilité", "Communication client"],
+        tags=["Power BI", "Visualisation", "DAX"],
+        repo_url="https://github.com/changpy130/OC_Portfolio_Data_Analyst/tree/main/P7-Cr%C3%A9ez%20un%20tableau%20de%20bord%20dynamique%20avec%20Power%20BI%20pour%20visualiser%20l'avancement%20de%20projets",
+        icon="📊",
+    ),
+    Project(
+        id="P8",
+        title="Profils sociodémographiques – DBT",
+        subtitle="Pipeline DBT sur Snowflake pour analyser les étudiants Data",
+        objective="Analyser l'évolution du profil sociodémographique des étudiants inscrits aux parcours Data d'OpenClassrooms sur 4 ans (2022–2025).",
+        skills=[
+            "Nettoyage des données (valeurs manquantes, harmonisation)",
+            "Pipeline DBT en couches (staging → intermédiaire → marts)",
+            "Intégration de données publiques INSEE via jointure",
+            "Tests de qualité DBT",
+            "Analyse et visualisation sociodémographique sur 4 ans",
+            "Documentation et traçabilité (RGPD)",
+        ],
+        tools=["Snowflake", "DBT Cloud", "Python", "Pandas", "Matplotlib", "Seaborn"],
+        insight="Tendances d'évolution sur 4 ans avec sous-représentations par genre et région vs population active française.",
+        soft_skills=["Rigueur", "Esprit critique", "Documentation"],
+        tags=["Python", "DBT", "Snowflake", "EDA"],
+        repo_url="https://github.com/changpy130/OC_Portfolio_Data_Analyst/tree/main/P8-Analysez%20l'%C3%A9volution%20de%20profils%20sociod%C3%A9mographiques%20avec%20DBT",
+        icon="🔬",
+    ),
+    Project(
+        id="P9",
+        title="Analyse des ventes – Lapage",
+        subtitle="Dashboard Streamlit + API REST + CI/CD pour une librairie",
+        objective="Analyser 2 ans de données de ventes en ligne de Lapage pour fournir des insights actionnables sur les ventes, le comportement client et la stratégie produit.",
+        skills=[
+            "Pipeline complet (nettoyage, EDA, analyse statistique)",
+            "Dashboard interactif multi-pages avec filtres persistants",
+            "Corrélations statistiques (Chi-2, ANOVA, Pearson/Spearman)",
+            "Courbe de Lorenz et coefficient de Gini",
+            "Séries temporelles avec moyenne mobile",
+            "Développement et intégration d'une API REST",
+            "Tests automatisés et pipeline CI/CD",
+        ],
+        tools=["Python", "Pandas", "Plotly", "Streamlit", "FastAPI", "SQLite", "pytest", "GitHub Actions"],
+        insight="Pic de ventes en septembre 2021, différences de préférences par genre (Chi-2, p < 0,001), top 20% clients = ~55% du CA — base pour le marketing ciblé.",
+        soft_skills=["Autonomie", "Rigueur", "Communication technique"],
+        tags=["Python", "Streamlit", "FastAPI", "CI/CD", "EDA", "Visualisation"],
+        repo_url="https://github.com/changpy130/OC_Portfolio_Data_Analyst/tree/main/P9-Analysez%20les%20ventes%20d'une%20librairie%20avec%20R%20ou%20Python",
+        demo_url="https://changportfoliodataanalyst-p9lapage.streamlit.app/",
+        icon="📚",
+    ),
+    Project(
+        id="P10",
+        title="Accès à l'eau potable – DWFA",
+        subtitle="Dashboard Tableau multi-vues pour une ONG internationale",
+        objective="Identifier les pays prioritaires pour une intervention de l'ONG DWFA dans l'accès à l'eau potable, et déterminer le domaine d'expertise à mobiliser.",
+        skills=[
+            "Prétraitement et jointure de sources multiples (FAO, OMS, Banque Mondiale)",
+            "Gestion des valeurs manquantes et filtrage par granularité",
+            "Harmonisation des noms de pays",
+            "Blueprint de tableau de bord",
+            "Histoire Tableau multi-vues (mondiale, continentale, nationale)",
+            "Nuages de points par domaine d'intervention",
+            "Filtre de stabilité politique ajustable",
+        ],
+        tools=["Python", "Pandas", "Tableau", "Tableau Public"],
+        insight="Trois dashboards permettant à DWFA d'identifier les priorités d'intervention en combinant taux d'accès à l'eau, mortalité, infrastructures et stabilité politique.",
+        soft_skills=["Posture consultant", "Pédagogie", "Storytelling"],
+        tags=["Python", "Tableau", "Visualisation", "Géospatial"],
+        repo_url="https://github.com/changpy130/OC_Portfolio_Data_Analyst/tree/main/P10-Faites%20une%20%C3%A9tude%20sur%20l'eau%20potable",
+        demo_url="https://public.tableau.com/app/profile/patti.c7785/viz/P10practice/Monde1",
+        icon="💧",
+    ),
+    Project(
+        id="P11",
+        title="Étude de marché internationale",
+        subtitle="ACP et clustering pour identifier des pays cibles à l'export",
+        objective="Analyser la faisabilité d'une expansion internationale pour La poule qui chante, entreprise française spécialisée dans le poulet biologique, en identifiant et regroupant les pays cibles à l'export.",
+        skills=[
+            "Collecte et fusion de données multi-sources (FAO, Banque Mondiale)",
+            "Nettoyage et préparation des données (valeurs manquantes, outliers, feature engineering)",
+            "Analyse exploratoire et sélection de variables (minimum 8 variables, 100+ pays)",
+            "Analyse en Composantes Principales (ACP) : cercle des corrélations, projection des individus",
+            "Clustering : Classification Ascendante Hiérarchique (CAH) et K-Means",
+            "Présentation des résultats à un public non technique (COMEX)",
+        ],
+        tools=["Python", "Pandas", "Scikit-learn", "Matplotlib", "Seaborn", "Jupyter Notebook"],
+        insight="Identification de groupements de pays prioritaires pour l'export de poulet biologique en combinant indicateurs économiques, alimentaires et de stabilité politique.",
+        soft_skills=["Communication", "Vulgarisation", "Esprit critique"],
+        tags=["Python", "Machine Learning", "EDA", "Visualisation"],
+        repo_url="https://github.com/changpy130/OC_Portfolio_Data_Analyst/tree/main/P11-Produisez%20une%20%C3%A9tude%20de%20march%C3%A9%20avec%20R%20ou%20Python",
+        icon="🐔",
+    ),
+    Project(
+        id="P12",
+        title="Détection de faux billets – ONCFM",
+        subtitle="Algorithme de détection automatique de faux billets en euros",
+        objective="Développer un algorithme de détection automatique de faux billets en euros pour l'ONCFM à partir des caractéristiques géométriques des billets scannés.",
+        skills=[
+            "Nettoyage et imputation des valeurs manquantes",
+            "Analyse descriptive et exploratoire des dimensions géométriques",
+            "Apprentissage non supervisé : K-Means avec analyse des centroïdes",
+            "Apprentissage supervisé : Régression logistique, KNN, Random Forest",
+            "Séparation train/test et évaluation des modèles (matrice de confusion, accuracy, recall, F1)",
+            "Développement d'un script applicatif fonctionnel (input CSV ou valeurs manuelles)",
+        ],
+        tools=["Python", "Pandas", "Scikit-learn", "Matplotlib", "Seaborn"],
+        insight="Sélection du modèle final minimisant les faux négatifs en garantissant qu'aucun faux billet ne passe inaperçu.",
+        soft_skills=["Rigueur", "Esprit analytique", "Autonomie"],
+        tags=["Python", "Machine Learning", "EDA"],
+        repo_url="https://github.com/changpy130/OC_Portfolio_Data_Analyst/tree/main/P12-D%C3%A9tectez%20des%20faux%20billets%20avec%20R%20ou%20Python",
+        icon="💶",
+    ),
+]
+
+# Helper: all unique tags across projects
+ALL_TAGS = sorted(set(tag for p in PROJECTS for tag in p.tags))
+ALL_TOOLS = sorted(set(tool for p in PROJECTS for tool in p.tools))
