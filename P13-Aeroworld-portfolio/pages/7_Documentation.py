@@ -2,6 +2,7 @@ import streamlit as st
 from components.sidebar import render_sidebar
 from components.helper import show_pdf
 import os
+from pathlib import Path
 
 render_sidebar()
 
@@ -16,6 +17,9 @@ tab1, tab2, tab3 = st.tabs([
 
 # region TAB 1 PROCEDURE
 
+BASE_DIR = Path(__file__).parent.parent
+PDF_PATH = BASE_DIR / "assets" / "procedure_graphique.pdf"
+
 with tab1:
     st.subheader("Procédure de création d'un graphique data")
     st.markdown("""
@@ -24,7 +28,8 @@ with tab1:
     """)
 
     # PDF embed
-    show_pdf("assets/procedure_graphique.pdf", toolbar=False)
+    
+    show_pdf(str(PDF_PATH), toolbar=False)
 
     with open("assets/procedure_graphique_original.pdf", "rb") as f:
         st.download_button(
