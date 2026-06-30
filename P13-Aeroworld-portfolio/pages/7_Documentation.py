@@ -25,7 +25,7 @@ with tab1:
     st.subheader("Procédure de création d'un graphique data")
     st.markdown("""
     Guide pas à pas pour créer une visualisation de données claire et professionnelle 
-    avec Tableau Software — depuis la préparation des données jusqu'à la publication.
+    avec Tableau Software, depuis la préparation des données jusqu'à la publication.
     """)
 
     # PDF embed
