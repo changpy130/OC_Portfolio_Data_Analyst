@@ -19,6 +19,7 @@ tab1, tab2, tab3 = st.tabs([
 
 BASE_DIR = Path(__file__).parent.parent
 PDF_PATH = BASE_DIR / "assets" / "procedure_graphique.pdf"
+PDF_ORIGINAL_PATH = BASE_DIR / "assets" / "procedure_graphique_original.pdf"
 
 with tab1:
     st.subheader("Procédure de création d'un graphique data")
@@ -31,7 +32,7 @@ with tab1:
     
     show_pdf(str(PDF_PATH), toolbar=False)
 
-    with open("assets/procedure_graphique_original.pdf", "rb") as f:
+    with open(str(PDF_ORIGINAL_PATH), "rb") as f:
         st.download_button(
             label="📥 Télécharger en PDF",
             data=f,
