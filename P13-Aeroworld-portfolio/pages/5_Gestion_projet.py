@@ -11,6 +11,8 @@ ANALYSE_BESOIN_PATH = BASE_DIR / "assets" / "analyse_besoin.pdf"
 CAHIER_PATH = BASE_DIR / "assets" / "cahier_des_charges.pdf"
 CARTE_MENTALE_PATH = BASE_DIR / "assets" / "carte_mentale.pdf"
 MOCKUP_VEILLE_PATH = BASE_DIR / "assets" / "mockup_veille.png"
+MOCKUP_PROFIL_PATH = BASE_DIR / "assets" / "mockup_profil.png"
+MOCKUP_PORTFOLIO_PATH = BASE_DIR / "assets" / "mockup_portfolio.png"
 
 render_sidebar()
 
@@ -230,6 +232,7 @@ st.markdown("---")
 
 st.subheader("🧠 Carte mentale")
 st.caption("Vue d'ensemble du portfolio : organisation des idées et liens entre les livrables.")
+show_pdf(str(CARTE_MENTALE_PATH))
 show_pdf_download(CARTE_MENTALE_PATH, "carte_mentale")
 
 st.markdown("---")
@@ -247,8 +250,8 @@ with m1:
 
 with m2:
     st.markdown("**Dashboard Profil**")
-    st.image("assets/mockup_profil.png", width='stretch')
+    st.image(str(MOCKUP_PROFIL_PATH), width='stretch')
 
 with m3:
     st.markdown("**Portfolio**")
-    st.image("assets/mockup_portfolio.png", width='stretch')
+    st.image(str(MOCKUP_PORTFOLIO_PATH), width='stretch')
