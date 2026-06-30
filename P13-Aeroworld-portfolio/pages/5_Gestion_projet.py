@@ -10,6 +10,7 @@ BASE_DIR = Path(__file__).parent.parent
 ANALYSE_BESOIN_PATH = BASE_DIR / "assets" / "analyse_besoin.pdf"
 CAHIER_PATH = BASE_DIR / "assets" / "cahier_des_charges.pdf"
 CARTE_MENTALE_PATH = BASE_DIR / "assets" / "carte_mentale.pdf"
+CARTE_MENTALE_IMG_PATH = BASE_DIR / "assets" / "carte_mentale_img.png"
 MOCKUP_VEILLE_PATH = BASE_DIR / "assets" / "mockup_veille.png"
 MOCKUP_PROFIL_PATH = BASE_DIR / "assets" / "mockup_profil.png"
 MOCKUP_PORTFOLIO_PATH = BASE_DIR / "assets" / "mockup_portfolio.png"
@@ -232,6 +233,7 @@ st.markdown("---")
 
 st.subheader("🧠 Carte mentale")
 st.caption("Vue d'ensemble du portfolio : organisation des idées et liens entre les livrables.")
+st.image(str(CARTE_MENTALE_IMG_PATH), width='stretch')
 show_pdf_download(CARTE_MENTALE_PATH, "carte_mentale")
 
 st.markdown("---")
