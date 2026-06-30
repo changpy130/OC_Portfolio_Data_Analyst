@@ -23,3 +23,12 @@ def show_pdf(filepath, height=700, toolbar=True):
                 style="border:none; border-radius:12px;">
             </iframe>
         """, unsafe_allow_html=True)
+
+def show_pdf_download(path, name):
+    with open(str(path), "rb") as f:
+        st.download_button(
+            label="📥 Télécharger le fichier complet en PDF",
+            data=f,
+            file_name=f"{name}.pdf",
+            mime="application/pdf",
+        )

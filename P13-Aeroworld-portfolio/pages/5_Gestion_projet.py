@@ -2,8 +2,9 @@ import streamlit as st
 import plotly.graph_objects as go
 from datetime import datetime
 from components.sidebar import render_sidebar
-from components.helper import show_pdf
+from components.helper import show_pdf, show_pdf_download
 from pathlib import Path
+
 
 BASE_DIR = Path(__file__).parent.parent
 ANALYSE_BESOIN_PATH = BASE_DIR / "assets" / "analyse_besoin.pdf"
@@ -80,8 +81,7 @@ for i, (icon, title, desc) in enumerate(competences):
         </div>
         """, unsafe_allow_html=True)
 
-with st.expander("📑  Fichier complet", expanded=False):
-    show_pdf(str(ANALYSE_BESOIN_PATH))
+show_pdf_download(ANALYSE_BESOIN_PATH, "analyse_besoin")
 
 st.markdown("---")
 
@@ -127,8 +127,7 @@ with cdc_cols[2]:
     </div>
     """, unsafe_allow_html=True)
 
-with st.expander("📑  Fichier complet", expanded=False):
-    show_pdf("assets/cahier_des_charges.pdf")
+show_pdf_download(CAHIER_PATH, "cahier_des_charges")
 
 st.markdown("---")
 
@@ -230,7 +229,7 @@ st.markdown("---")
 
 st.subheader("🧠 Carte mentale")
 st.caption("Vue d'ensemble du portfolio : organisation des idées et liens entre les livrables.")
-show_pdf("assets/carte_mentale.pdf")
+show_pdf_download(CARTE_MENTALE_PATH, "carte_mentale")
 
 st.markdown("---")
 
