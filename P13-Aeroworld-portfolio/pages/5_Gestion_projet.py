@@ -3,6 +3,12 @@ import plotly.graph_objects as go
 from datetime import datetime
 from components.sidebar import render_sidebar
 from components.helper import show_pdf
+from pathlib import Path
+
+BASE_DIR = Path(__file__).parent.parent
+ANALYSE_BESOIN_PATH = BASE_DIR / "assets" / "analyse_besoin.pdf"
+CAHIER_PATH = BASE_DIR / "assets" / "cahier_des_charges.pdf"
+CARTE_MENTALE_PATH = BASE_DIR / "assets" / "carte_mentale.pdf"
 
 render_sidebar()
 
@@ -75,7 +81,7 @@ for i, (icon, title, desc) in enumerate(competences):
         """, unsafe_allow_html=True)
 
 with st.expander("📑  Fichier complet", expanded=False):
-    show_pdf("assets/analyse_besoin.pdf")
+    show_pdf(str(ANALYSE_BESOIN_PATH))
 
 st.markdown("---")
 
