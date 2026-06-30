@@ -1,6 +1,6 @@
 import streamlit as st
 from components.sidebar import render_sidebar
-from components.helper import show_pdf
+from components.helper import show_pdf_download
 import os
 from pathlib import Path
 
@@ -29,16 +29,7 @@ with tab1:
     """)
 
     # PDF embed
-    
-    show_pdf(str(PDF_PATH), toolbar=False)
-
-    with open(str(PDF_ORIGINAL_PATH), "rb") as f:
-        st.download_button(
-            label="📥 Télécharger en PDF",
-            data=f,
-            file_name="procedure_graphique.pdf",
-            mime="application/pdf",
-        )
+    show_pdf_download(PDF_ORIGINAL_PATH, "procedure_graphique")
 
     st.markdown("---")
 
