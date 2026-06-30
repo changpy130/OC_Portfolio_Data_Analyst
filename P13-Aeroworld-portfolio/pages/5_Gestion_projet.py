@@ -10,6 +10,7 @@ BASE_DIR = Path(__file__).parent.parent
 ANALYSE_BESOIN_PATH = BASE_DIR / "assets" / "analyse_besoin.pdf"
 CAHIER_PATH = BASE_DIR / "assets" / "cahier_des_charges.pdf"
 CARTE_MENTALE_PATH = BASE_DIR / "assets" / "carte_mentale.pdf"
+MOCKUP_VEILLE_PATH = BASE_DIR / "assets" / "mockup_veille.png"
 
 render_sidebar()
 
@@ -242,7 +243,7 @@ m1, m2, m3 = st.columns(3)
 
 with m1:
     st.markdown("**Dashboard Veille**")
-    st.image("assets/mockup_veille.png", width='stretch')
+    st.image(str(MOCKUP_VEILLE_PATH), width='stretch')
 
 with m2:
     st.markdown("**Dashboard Profil**")
