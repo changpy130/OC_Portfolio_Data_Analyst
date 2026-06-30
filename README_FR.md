@@ -48,6 +48,7 @@
 | [P10](#p10) | Étude d'accès à l'eau potable – DWFA | Prétraitement des données, Dashboard multi-vues, Visualisation géospatiale, Storytelling | Python (Pandas), Tableau | [Repo P10](https://github.com/changpy130/OC_Portfolio_Data_Analyst/tree/main/P10-Faites%20une%20%C3%A9tude%20sur%20l'eau%20potable) · [🌐 Tableau Public](https://public.tableau.com/app/profile/patti.c7785/viz/P10practice/Monde1) |
 | [P11](#p11) | Étude de marché internationale – La poule qui chante | ACP, Clustering (CAH + K-Means), Feature Engineering | Python (Pandas, Scikit-learn, Matplotlib, Seaborn) | [Repo P11](https://github.com/changpy130/OC_Portfolio_Data_Analyst/tree/main/P11-Produisez%20une%20%C3%A9tude%20de%20march%C3%A9%20avec%20R%20ou%20Python) |
 | [P12](#p12) | Détection de faux billets – ONCFM | Apprentissage supervisé & non supervisé, Classification, Régression logistique, K-Means, KNN, Random Forest | Python (Pandas, Scikit-learn, Joblib), Jupyter Notebook | [Repo P12](https://github.com/changpy130/OC_Portfolio_Data_Analyst/tree/main/P12-D%C3%A9tectez%20des%20faux%20billets%20avec%20R%20ou%20Python) |
+| [P13](#p13) | Portfolio Data Analyst – Aéroworld | Analyse des besoins, gestion de projet, dashboards, formation, documentation | Tableau/Power BI, GitHub Pages, Loom | [Repo P13](https://github.com/changpy130/OC_Portfolio_Data_Analyst/tree/main/P13-Aeroworld-portfolio) · [🌐 Live Demo](https://pattychang-p13portfolio.streamlit.app/) |
 
 ---
 
@@ -254,6 +255,40 @@ Python (Pandas, Scikit-learn, Joblib), Jupyter Notebook
 
 **📈 Insight clé / impact :**  
 Sélection du modèle final le plus performant pour minimiser les faux négatifs — garantissant qu'aucun faux billet ne passe inaperçu — avec une application fonctionnelle capable de prédire la nature d'un billet à partir de ses seules dimensions géométriques.
+
+---
+
+### P13 – Construisez votre Portfolio de Data Analyst <a name="p13"></a>
+
+**🎯 Objectif :**  
+Concevoir un portfolio en ligne complet pour répondre à la demande du client Aéroworld (leader mondial de l'aéronautique), dans le cadre d'un recrutement pour un poste de Data Analyst chef de projet. Le portfolio doit présenter mon profil, mes compétences et démontrer ma capacité à gérer un projet data de bout en bout, en adoptant une posture de consultant.
+
+**🛠 Compétences mobilisées :**  
+- Analyse des besoins métiers et identification des enjeux client
+- Rédaction d'un cahier des charges fonctionnel
+- Planification de projet (diagramme de Gantt)
+- Conception de mock-up de tableaux de bord (veille métier, présentation de profil)
+- Création de tableaux de bord interactifs sous Tableau Software / Power BI
+- Réalisation d'une vidéo de formation pédagogique (≥ 8 min)
+- Rédaction de procédures de documentation claires et visuelles
+- Veille métier et technologique (tests d'outils et de méthodes)
+- Posture de consultant : challenge des besoins, vulgarisation, communication adaptée au public
+
+**💻 Outils utilisés :**  
+Tableau Software, GitHub Pages, Youtube, Canva (mock-up)
+
+**📦 Livrables :**  
+- Carte mentale du portfolio
+- Analyse des besoins métiers (Aéroworld)
+- Cahier des charges du projet portfolio
+- Diagramme de Gantt
+- Mock-up des tableaux de bord et du portfolio
+- Tableaux de bord (veille métier + profil)
+- Vidéo de formation (Tableau Software / Power BI)
+- Documentation de procédure
+
+**📈 Insight clé / impact :**  
+Production d'un portfolio réflexif et structuré démontrant la capacité à mener un projet data de A à Z, du cadrage à la livraison, tout en incarnant une posture de consultant capable de challenger les besoins et de vulgariser des notions techniques pour différents publics.
 
 ## 📬 Contact
 

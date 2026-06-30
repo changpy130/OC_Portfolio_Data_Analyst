@@ -48,6 +48,7 @@
 | [P10](#p10) | Drinking Water Access Study – DWFA | Data Preprocessing, Multi-view Dashboard, Geospatial Visualisation, Storytelling | Python (Pandas), Tableau | [Repo P10](https://github.com/changpy130/OC_Portfolio_Data_Analyst/tree/main/P10-Faites%20une%20%C3%A9tude%20sur%20l'eau%20potable) · [🌐 Tableau Public](https://public.tableau.com/app/profile/patti.c7785/viz/P10practice/Monde1) |
 | [P11](#p11) | International Market Study – La poule qui chante | PCA, Clustering (HAC + K-Means), Feature Engineering | Python (Pandas, Scikit-learn, Matplotlib, Seaborn) | [Repo P11](https://github.com/changpy130/OC_Portfolio_Data_Analyst/tree/main/P11-Produisez%20une%20%C3%A9tude%20de%20march%C3%A9%20avec%20R%20ou%20Python) |
 | [P12](#p12) | Counterfeit Banknote Detection – ONCFM | Supervised & Unsupervised Learning, Classification, Logistic Regression, K-Means, KNN, Random Forest | Python (Pandas, Scikit-learn, Joblib), Jupyter Notebook | [Repo P12](https://github.com/changpy130/OC_Portfolio_Data_Analyst/tree/main/P12-D%C3%A9tectez%20des%20faux%20billets%20avec%20R%20ou%20Python) |
+| [P13](#p13) | Data Analyst Portfolio – Aéroworld | Needs analysis, project management, dashboards, training, documentation | Tableau/Power BI, GitHub Pages, Loom | [Repo P13](https://github.com/changpy130/OC_Portfolio_Data_Analyst/tree/main/P13-Aeroworld-portfolio) · [🌐 Live Demo](https://pattychang-p13portfolio.streamlit.app/) |
 
 ---
 
@@ -254,6 +255,40 @@ Python (Pandas, Scikit-learn, Joblib), Jupyter Notebook
 
 **📈 Key Insight / Impact:**  
 Selected the best-performing final model to minimise false negatives — ensuring no counterfeit slips through — with a standalone application capable of predicting a banknote's authenticity from geometric measurements alone.
+
+---
+
+### P13 – Build Your Data Analyst Portfolio <a name="p13"></a>
+
+**🎯 Objective:**  
+Design a complete online portfolio in response to a request from Aéroworld, a global leader in the aerospace industry, as part of a recruitment process for a Data Analyst Project Lead position. The portfolio showcases my profile and skills while demonstrating my ability to manage an end-to-end data project with a consulting mindset.
+
+**🛠 Skills Applied:**  
+- Business needs analysis and stakeholder requirement identification
+- Functional specifications writing (cahier des charges)
+- Project planning (Gantt chart)
+- Dashboard mock-up design (industry watch, profile presentation)
+- Interactive dashboard creation in Tableau Software / Power BI
+- Training video production (≥ 8 min)
+- Clear, visual documentation procedures
+- Industry and technology watch (tool and method testing)
+- Consultant posture: challenging requirements, simplifying technical concepts for different audiences
+
+**💻 Tools Used:**  
+Tableau Software, GitHub Pages, Youtube, Canva (mock-up)
+
+**📦 Deliverables:**  
+- Portfolio mind map
+- Business needs analysis (Aéroworld)
+- Portfolio project specifications
+- Gantt chart
+- Dashboard and portfolio mock-ups
+- Dashboards (industry watch + profile)
+- Training video (Tableau Software / Power BI)
+- Documentation procedure
+
+**📈 Key Insight / Impact:**  
+Delivered a reflective, well-structured portfolio demonstrating the ability to run a data project from scoping to delivery, while embodying a consulting posture capable of challenging requirements and simplifying technical concepts for varied audiences.
 
 ## 📬 Contact
 
